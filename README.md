@@ -3,7 +3,10 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Frontend-ReactJS-f9a8d4?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Styling-HTML%20%7C%20CSS%20%7C%20Bootstrap-ffc0cb?style=for-the-badge" />
- [<img src="https://img.shields.io/badge/Deployed-Live%20Website-e5bdf6?style=for-the-badge" />](https://www.agapegarden.in/)
+ <a href="https://www.agapegarden.in/" target="_blank">
+  <img src="https://img.shields.io/badge/Deployed-Live%20Website-e5bdf6?style=for-the-badge" />
+</a>
+
 
 
 </p>
@@ -68,7 +71,3 @@ Hosted and accessible online through a public link for real-time access.
 
 🌐 **Visit the Live Website:** [https://www.agapegarden.in/]  
 
-
-
-# Start the development server
-npm start
