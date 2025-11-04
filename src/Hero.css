@@ -1,0 +1,449 @@
+/* ======= Desktop Styles ======= */
+
+.hero-container {
+  height: 700px;
+  display: flex;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20vh;
+  position: relative;
+  left: 5%;
+}
+
+.hero-text {
+  padding-top: 5vh;
+  width: 700px;
+}
+
+.hero-text p {
+  font-size: 1.45vw;
+  margin-bottom: 10px;
+}
+
+.hero-text #text1 {
+  font-size: 3.5vw;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.hero-text h2 {
+  font-size: 4.9vw;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.hero-text h3 {
+  font-size: 1.8vw;
+}
+
+.img3 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img3 h2 {
+  position: relative;
+  right: 32px;
+}
+
+.img3 h3 {
+  position: relative;
+  right: 32px;
+}
+
+#img2 {
+  position: relative;
+  right: 19px;
+}
+
+#img3 {
+  position: relative;
+  right: 38px;
+}
+
+#hero-bt {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  text-align: left;
+}
+
+#hero-bt img {
+  width: 100%;
+}
+
+.hero-images {
+  width: 50%;
+}
+
+#pic1 {
+  width: 60%;
+  height: auto;
+  position: relative;
+  bottom: 6%;
+}
+
+#pic2 {
+  width: 80%;
+  height: auto;
+  position: relative;
+  bottom: 22%;
+  left: 10%;
+}
+
+#pic3 {
+  position: relative;
+  width: 60%;
+  bottom: 50%;
+  right: 38%;
+}
+
+.star {
+  display: flex;
+}
+
+.star img {
+  width: 4vh;
+  height: 4vh;
+  padding-top: 20px;
+}
+
+.early-education {
+  border-radius: 60px;
+  background-color: #f55daf;
+  height: fit-content;
+  display: flex;
+  width: 100%;
+}
+
+.early-education-container {
+  display: flex;
+  width: 85%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.early-education-text {
+  color: aliceblue;
+  font-size: 48px;
+  font-weight: 400;
+  width: 700px;
+}
+
+.blue-box {
+  height: 390px;
+  width: 590px;
+  background-color: #89e3ff;
+  border-radius: 35px;
+}
+
+.white-box {
+  height: 370px;
+  width: 570px;
+  background-color: #feeef9;
+  border-radius: 35px;
+  border: #0c0c0c solid 2px;
+}
+
+.white-box p {
+  color: #0c0c0c;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.white-box #box-text {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 24px;
+  font-weight: 200;
+  text-align: justify;
+}
+
+.white-box button {
+  font-size: 18px;
+  font-weight: 600;
+  border: #0c0c0c solid 3px;
+  border-radius: 40px;
+  height: 48px;
+  width: 144px;
+  background: #89e3ff;
+  cursor: pointer;
+}
+
+.box-image {
+  display: flex;
+}
+
+.box-image img {
+  margin-left: 50px;
+}
+
+.box-image2 #circle {
+  padding-left: 60%;
+  padding-top: 40px;
+  height: 114px;
+  width: 114px;
+}
+
+.box-image2 #boximage {
+  padding-top: 30px;
+  padding-left: 8%;
+  height: 400px;
+  width: 400px;
+}
+/* ======= Mobile Styles ======= */
+/* ======= Mobile Styles ======= */
+@media (max-width: 580px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 12vh 0 0 0;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .hero-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  /* Move "Welcome to Agape Garden Play School" a bit left */
+  .hero-text p {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: left; /* left-aligned */
+  width: 95%; /* give more horizontal space */
+  transform: translateX(-4%); /* subtle left shift */
+  color: #222;
+  line-height: 1.4;
+  white-space: nowrap; /* keeps it in one line */
+}
+
+
+  /* Keep original color for "Build A Foundation..." */
+  .hero-text #text1 {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5px;
+    line-height: 1.5;
+    /* no color change */
+  }
+
+  .hero-text h2 {
+    font-size: 26px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .hero-text h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .img3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #img1,
+  #img2,
+  #img3 {
+    width: 20px;
+    height: auto;
+    position: static;
+  }
+
+  #hero-bt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 20px auto;
+    font-size: 18px;
+  }
+
+  #hero-bt img {
+    width: 100%;
+  }
+
+  .hero-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  #pic1 {
+    display: block;
+    width: 80%;
+    height: auto;
+    position: static;
+    border-radius: 20px;
+  }
+
+  #pic2,
+  #pic3 {
+    display: none;
+  }
+/* Shift the button and hero images slightly left */
+#hero-bt,
+.hero-images {
+  transform: translateX(-4%);
+}
+
+/* Keep images aligned neatly */
+#pic1 {
+  display: block;
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  margin: 0 auto;
+  transform: translateX(-3%); /* slight tweak to align with text */
+}
+
+/* Keep icons + text (like 350+ kids) aligned left slightly */
+.img3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-3%);
+}
+
+  .star {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 10px;
+  }
+
+  .star img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .early-education {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .early-education-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .early-education-text {
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    color: aliceblue;
+  }
+
+  .blue-box {
+    width: 100%;
+    height: auto;
+    background-color: #89e3ff;
+    border-radius: 30px;
+  }
+
+  .white-box {
+    width: 95%;
+    height: auto;
+    background-color: #feeef9;
+    border-radius: 30px;
+    border: 2px solid #0c0c0c;
+    padding: 15px;
+    margin: auto;
+  }
+
+  .white-box p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .white-box #box-text {
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px 0;
+  }
+
+  .box-image {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .box-image img {
+    width: 60px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .white-box button {
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 2px solid #0c0c0c;
+    background-color: #89e3ff;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: max-content;
+    text-align: center;
+  }
+
+  .box-image2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .box-image2 #circle {
+    display: none !important;
+  }
+
+  .box-image2 #boximage {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+}

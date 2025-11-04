@@ -1,0 +1,317 @@
+/* NavBar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 78px;
+  border-bottom: #0c0c0c solid 2px;
+  background-color: #feeef9;
+  padding: 0 20px;
+  z-index: 1000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+  background-color: #f55daf;
+  padding: 8px;
+  border-radius: 25px;
+}
+
+.logo {
+  height: 100px; /* Allows the logo to scale based on the container */
+}
+
+.navbar-logo {
+  height: 79px; /* Adjust as needed for desktop view */
+  display: block;
+  margin-left: 25px;
+  padding-right: 100px;
+}
+
+.sidebar-logo {
+  height: 15%; /* Adjust this percentage as needed */
+  max-height: 60px; /* Set a maximum height for the logo */
+  width: auto; /* Maintains aspect ratio */
+  margin-bottom: 30px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+/* Hide the enquire button on mobile and show it inside the sidebar */
+.enquire-button {
+  margin-left: 0px;
+  margin-left: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  height: 30px;
+  background-color: #f55daf;
+  border-radius: 10px;
+  border-color: rgba(0, 0, 0, 0.767);
+  cursor: pointer;
+  align-items: center;
+  margin-right: 130px;
+}
+
+.sidebar-enquire-button {
+  margin-left: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  height: 30px;
+  background-color: #f55daf;
+  border-radius: 10px;
+  border-color: rgba(0, 0, 0, 0.767);
+  cursor: pointer;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar1 {
+  width: 20px;
+  height: 2px;
+  background-color: #fc01ff;
+  margin: 5px 0;
+  transition: 0.3s;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.bar2 {
+  width: 28px;
+  height: 2px;
+  background-color: #fc01ff;
+  margin: 5px 0;
+  transition: 0.3s;
+  margin-left: 15px;
+}
+
+.bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: #fc01ff;
+  margin: 5px 0;
+  transition: 0.3s;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  border-right: #0c0c0c solid 2px;
+  transition: left 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px; /* Adjust to accommodate for logo height */
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  background-color: #eb81b3;
+  border-radius: 150px;
+  font-size: 18px;
+  font-weight: lighter;
+  text-decoration: none;
+  padding: 20px 20px;
+  margin: 5px 0; /* Add margin to create space between items */
+  text-align: center;
+}
+
+.sidebar a:hover {
+  background-color: #f55daf;
+  padding: 8px;
+  border-radius: 25px;
+}
+
+.sidebar a:last-child {
+  border-bottom: none; /* Remove bottom border from the last link */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 78px;
+    border-bottom: #0c0c0c solid 2px;
+    background-color: #feeef9;
+    padding: 0 20px;
+    z-index: 1000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .sidebar a {
+    display: block;
+    color: black;
+    background-color: #eb81b3;
+    border-radius: 150px;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 15px 15px;
+    margin: 5px 0; /* Add margin to create space between items */
+    text-align: center;
+  }
+ .navbar-logo {
+  display: block; /* Show logo in mobile */
+  height: 50px;   /* Optional: resize for smaller screens */
+  margin-left: 10px;
+}
+
+  .nav-links {
+    display: none;
+  }
+
+  .enquire-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .sidebar {
+    padding-top: 50px; /* Adjust to accommodate for logo height */
+  }
+
+  .sidebar-logo {
+    display: block;
+    width: 35%; /* Set a maximum height for the logo */
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sidebar-enquire-button {
+    display: block;
+    margin-top: 35px; /* Adds space between the last link and the button */
+  }
+  .move-right {
+    margin-left: 90%; /* Move logo to the right */
+    transition: margin-left 0.3s ease; /* Smooth transition */
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 150px;
+    height: 100%;
+    background-color: white;
+    border-right: #0c0c0c solid 2px;
+    transition: left 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; /* Adjust to accommodate for logo height */
+    z-index: 1000;
+  }
+}
+
+.sidebar-link {
+  background-color: #f55daf;
+  padding-bottom: 175%;
+  padding-top: 35px;
+}
+.close-btn {
+  background: none;
+  border: none;
+  color: #f701ff;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute; /* Position it at the top right */
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+}
+
+/* Media Queries for screens up to 580px */
+@media (max-width: 580px) {
+  .navbar-logo {
+  display: block; /* Show logo in mobile */
+  height: 50px;   /* Optional: resize for smaller screens */
+  margin-left: 10px;
+}
+
+  .nav-links {
+    display: none; /* Hide navigation links */
+  }
+
+  .enquire-button {
+    display: none; /* Hide enquiry button */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger icon */
+  }
+
+  .sidebar {
+    padding-top: 50px; /* Adjust to accommodate for logo height */
+  }
+
+  .sidebar-logo {
+    display: block; /* Show sidebar logo */
+    width: 40%; /* Adjusted width for smaller screens */
+    margin-left: auto; /* Center the logo */
+    margin-right: auto; /* Center the logo */
+  }
+
+  .sidebar-enquire-button {
+    display: block; /* Show enquiry button in sidebar */
+    margin-top: 20px; /* Adjust space between the last link and the button */
+  }
+
+  .sidebar-link {
+    background-color: #f55daf; /* Background color for sidebar links */
+    padding-bottom: 150%; /* Adjust padding for spacing */
+    padding-top: 20px; /* Adjust top padding */
+  }
+
+  .close-btn {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    color: #f701ff; /* Button color */
+    font-size: 28px; /* Adjust font size */
+    cursor: pointer; /* Pointer cursor for button */
+    position: absolute; /* Position at top right */
+    top: 15px; /* Adjust as needed */
+    right: 15px; /* Adjust as needed */
+  }
+}

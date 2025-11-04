@@ -1,0 +1,169 @@
+/* Features */
+.features-container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#strikeline {
+  position: relative;
+  left: 12%;
+  top: 95px;
+  height: 20px;
+  width: 170px;
+}
+
+.feature-heading {
+  text-align: center;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-heading h1 {
+  font-size: 40px;
+}
+
+.feature-heading p {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.feature-cards {
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card {
+  width: 260px;
+  height: 300px;
+  border: #f55daf solid 2px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-text {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #4a4a4a;
+  font-weight: normal;
+  word-spacing: 2px;
+}
+
+.card img {
+  height: 82px;
+  width: 82px;
+  padding-top: 15%;
+}
+
+/* --- Existing styles retained above --- */
+
+/* Media Query for Mobile View (Fixed) */
+@media (max-width: 768px) {
+  .features-container {
+    width: 100%;
+    padding: 30px 15px;
+    overflow-x: hidden;
+  }
+
+  .feature-heading {
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .feature-heading h1 {
+    font-size: 28px;
+  }
+
+  .feature-heading p {
+    font-size: 18px;
+  }
+
+  #strikeline {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    height: 15px;
+    width: 130px;
+  }
+
+  .feature-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .card img {
+    padding-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .card-text {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .feature-cards .row {
+    display: flex !important;
+  }
+}
+
+/* Smaller Mobile Devices */
+@media (max-width: 480px) {
+  .feature-heading h1 {
+    font-size: 24px;
+  }
+
+  .feature-heading p {
+    font-size: 1rem;
+  }
+
+  #strikeline {
+    top: 60px;
+    height: 10px;
+    width: 100px;
+  }
+
+  .card-text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 580px) {
+  #strikeline {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    transform: none;
+  }
+}

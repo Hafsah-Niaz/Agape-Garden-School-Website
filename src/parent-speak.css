@@ -1,0 +1,249 @@
+/*parent-speak*/
+.parent-speak-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #ffd2ea;
+  margin: 0;
+}
+
+.pscard-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.parent-heading {
+  text-align: center;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parent-heading h1 {
+  font-size: 40px;
+}
+
+.parent-heading p {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+#checkout {
+  position: relative;
+  top: 5px;
+  background-color: #ff69b4; /* Hot pink background */
+  border: none; /* No border */
+  color: white; /* White text */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 20px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+  width: 15%; /* Full width of parent */
+  max-width: 200px; /* Add a max-width for better control */
+  max-width: 150px; /* Set a max-width */
+  margin: 0 10px;
+}
+
+#checkout:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+#checkout:focus {
+  outline: none; /* Remove outline when focused */
+  box-shadow: 0 0 0 3px rgba(255, 20, 140, 0.5); /* Add a focus outline for accessibility */
+}
+
+#speakstrike {
+  position: relative;
+  top: 94px;
+  width: 130px;
+  left: 80px;
+}
+
+.review-box {
+  padding-top: 0;
+  display: block;
+  text-align: center;
+  height: fit-content;
+}
+
+.review-box #profile {
+  height: 100px;
+  width: 101px;
+  position: relative;
+  top: 50px;
+  max-width: 100%; /* Ensure image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.pscard {
+  width: 600px;
+  height: 350px;
+  border: #f55daf solid 2px;
+  border-radius: 20px;
+  border-bottom: #f55daf solid 5px;
+  border-left: #f55daf solid 5px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
+  transition: transform 0.3s; /* Adding transition for hover effect */
+}
+
+.pscard h1 {
+  padding-top: 40px;
+  margin-bottom: 0px;
+}
+
+.pscard-container button {
+  width: 44px;
+  height: 44px;
+  border-style: none;
+  background-color: transparent;
+}
+
+#left-button {
+  position: relative;
+  left: 12%;
+}
+
+#right-button {
+  position: relative;
+  right: 12%;
+}
+
+.review {
+  width: 550px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow-wrap: break-word; /* Prevent overflow */
+}
+
+.review p {
+  font-weight: lighter;
+  word-spacing: 2px;
+  font-size: 1rem; /* Adjust font size for readability */
+}
+
+@media (max-width: 768px) {
+  .parent-speak-container {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .parent-heading {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .parent-heading h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .parent-heading p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #speakstrike {
+    position: relative;
+    top: 60px;
+    left: 10%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 10px;
+  }
+
+  .pscard-container {
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+.pscard {
+  width: 90%;
+  max-width: 320px;
+  height: auto;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-left: 7%; /* ✅ moves container a bit to the right */
+}
+
+  .review {
+    overflow-y: auto;
+    max-height: 300px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .review-box {
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .review-box #profile {
+    height: 70px;
+    width: 70px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .pscard h1 {
+    font-size: 1.5rem;
+  }
+
+  .review p {
+    font-size: 0.9rem;
+  }
+
+  #left-button,
+  #right-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+  }
+
+  #left-button {
+    left: 0;
+  }
+
+  #right-button {
+    right: 0;
+  }
+
+  #checkout {
+    width: 30%;
+    margin: 20px auto 0 auto;
+    flex-shrink: 0;
+    position: static;
+    display: block;
+    height: 36px;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #checkout:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+  }
+}

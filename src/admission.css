@@ -1,0 +1,220 @@
+.admission-main {
+  text-align: center;
+  height: 600px;
+}
+
+.admission-content {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.admin-heading {
+  padding-top: 45px;
+  position: relative; /* Ensure positioning context */
+}
+
+#adm-strike {
+  position: relative;
+  width: 138px; /* Keep your width */
+  height: 20px; /* Keep your height */
+  left: 7%; /* Center horizontally */
+  bottom: 29px; /* Position below the heading */
+}
+
+.adm-details {
+  width: 50%;
+  height: 60%;
+  text-align: left;
+  color: #ff0099;
+  word-spacing: 2px;
+}
+
+.adm-details p {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.adm-text img {
+  height: 40px;
+  width: 50px;
+}
+
+.adm-text {
+  align-items: center;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.adm-cred {
+  border: #f55daf solid 1px;
+  border-radius: 8px;
+  width: 50%;
+}
+
+input {
+  width: 70%;
+  height: 20px;
+  border: #f55daf solid 1px;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+#submit {
+  border-radius: 15px;
+  width: 73%;
+  height: 30px;
+  background-color: #f55daf;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.adm-cred h4 {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 50px;
+  color: #f55daf;
+  font-weight: lighter;
+}
+/* ---------- Tablet View (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+  .admission-main {
+    height: auto;
+    padding: 25px 15px;
+  }
+
+  .admission-content {
+    width: 90%;
+    flex-direction: column;
+    padding-top: 25px;
+  }
+
+  .adm-details {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .adm-details p {
+    margin: 10px 15px;
+    line-height: 1.6;
+  }
+
+  .adm-cred {
+    width: 100%;
+    padding-bottom: 4%;
+  }
+
+  input {
+    width: 70%;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #submit {
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+
+  .admin-heading {
+    padding-top: 25px;
+  }
+}
+
+/* ---------- Mobile View (max-width: 580px) ---------- */
+@media (max-width: 580px) {
+  #admin-heading h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .admission-main {
+    padding: 15px;
+  }
+
+  .admission-content {
+    width: 95%;
+  }
+
+  .adm-details {
+    width: 100%;
+  }
+
+  .adm-text img {
+    height: 28px;
+    width: 38px;
+  }
+
+  .adm-cred {
+    width: 100%;
+  }
+
+  input {
+    width: 80%;
+    height: 36px;
+    border-radius: 12px;
+    font-size: 15px;
+  }
+
+  #submit {
+    width: 50%;
+    height: 42px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .adm-cred h4 {
+    font-size: 17px;
+    margin-left: 10px;
+  }
+
+  .admission-main h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .adm-strike {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+  }
+}
+
+/* ---------- Small Devices (max-width: 393px) ---------- */
+@media (max-width: 393px) {
+  #admin-heading h1 {
+    font-size: 20px;
+  }
+
+  #adm-strike {
+    position: relative;
+    width: 80px;
+    height: 12px;
+    left: 10%;
+    bottom: 20px;
+  }
+
+  .adm-text {
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  input {
+    width: 85%;
+    font-size: 14px;
+  }
+
+  #submit {
+    width: 60%;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,396 @@
+/* Footer Outer Wrapper */
+.footer-wrapper {
+  background-color: #ffd2ea;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  width: 60%;
+  height: 900px;
+  padding-bottom: 0%;
+}
+
+/* Footer Main Block */
+.footer {
+  background-color: #ffd2ea;
+  height: 400px;
+  margin-top: 0;
+  position: relative;
+}
+
+.footer-container {
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #000000;
+  width: 85%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+
+.top {
+  display: flex;
+}
+
+/* Logo + Social + Phone */
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.logo img {
+  width: 230px;
+  height: 170px;
+  transition: width 0.3s ease;
+  padding-bottom: 0px;
+}
+
+.logo-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-media {
+  padding-left: 60px;
+  margin-top: 10px;
+}
+
+.social-media img {
+  height: 70px;
+  width: 70px;
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+
+.contact-number {
+  padding-left: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 0px;
+  color: #000;
+}
+.phone-link {
+  color: #000000 !important;   /* Force black */
+  text-decoration: none !important; /* Remove underline */
+}
+
+.phone-link:hover {
+  color: #ff4081; /* Optional hover color */
+}
+/* Quick Links */
+.quick-links {
+ 
+  width: 200px;
+  letter-spacing: 1px;
+  padding-left: 10%;
+  color: #000000;
+}
+
+.quick-links p {
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #c2185b; /* changed from black to maroon/pink */
+}
+.quick-links a {
+  
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  color: #000000;
+  display: block;
+  text-decoration: none;
+  line-height: 22px;
+}
+
+/* Address Section */
+.address {
+  width: 250px;
+  line-height: 16px;
+}
+
+.address p {
+  font-weight: 500;
+}
+
+.address h5 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #c2185b; /* changed heading color */
+}
+/* Footer Bottom Line and Copyright */
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin-top: 60px;
+}
+
+.bottom {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+/* Map Container */
+.map-container {
+  position: absolute;
+  bottom: 40%; /* was 0%, increase to push it up */
+  right: 5%;
+  z-index: 1;
+}
+
+
+.map-image {
+  width: 100%;
+  height: auto;
+}
+
+#footer-map:hover {
+  cursor: pointer;
+}
+
+#footer-map:focus {
+  outline: none;
+}
+
+#footer-fb {
+  background-color: transparent;
+  border: none;
+}
+
+#footer-fb:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#footer-fb:focus {
+  outline: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Footer main area */
+  .footer {
+    background-color: #f64ca3 !important; /* pink background only for footer */
+    width: 100%;
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+  }
+
+  /* Footer inner container */
+  .footer-container {
+    background-color: #f64ca3 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  /* Stack layout neatly */
+  .top {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100%;
+    gap: 15px;
+  }
+
+  /* Hide sections not needed on mobile */
+  .quick-links,
+  .map-container {
+    display: none !important;
+  }
+
+  /* Logo centered */
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 80%;
+    max-width: 150px;
+  }
+
+  /* Social icons below logo */
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .social-media img {
+    height: 26px;
+    width: 26px;
+  }
+
+  /* Address section */
+  .address {
+    margin-top: 15px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .address h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .address p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Divider line */
+  .footer-line {
+    width: 80%;
+    margin: 10px auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  /* Bottom copyright area */
+  .bottom {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .bottom p {
+    color: white;
+    font-size: 13px;
+    margin: 0;
+  }
+
+  /* Important: remove background color from rest of the site */
+  body,
+  html {
+    background-color: transparent !important;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* ========================= */
+/* 💻 Desktop View (min-width: 769px) */
+/* ========================= */
+@media (min-width: 769px) {
+  .footer {
+    background-color: #f55daf !important;
+    height: 400px;
+  }
+}
+/* ========================= */
+/* 📱 Mobile View (max-width: 768px) */
+/* ========================= */
+@media only screen and (max-width: 768px) {
+  /* Footer main area */
+  .footer {
+    background-color: #ffd2ea!important; /* pink background only for footer */
+    width: 100%;
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+  }
+
+  /* Footer inner container */
+  .footer-container {
+    background-color: #f64ca3 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  /* Stack layout neatly */
+  .top {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100%;
+    gap: 15px;
+  }
+
+  /* ✅ Hide only on mobile */
+  .footer .logo,
+  .footer .social-media {
+    display: none !important;
+  }
+
+  /* Hide sections not needed on mobile */
+  .footer .quick-links,
+  .footer .map-container {
+    display: none !important;
+  }
+
+  /* Address section */
+  .footer .address {
+    margin-top: 15px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .footer .address h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .footer .address p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Divider line */
+  .footer .footer-line {
+    width: 80%;
+    margin: 10px auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  /* Bottom copyright area */
+  .footer .bottom {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .footer .bottom p {
+    color: white;
+    font-size: 13px;
+    margin: 0;
+  }
+
+  /* Important: remove background color from rest of the site */
+  html, body {
+    background-color: transparent !important;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 580px) {
+  a[href="mailto:agapegarden300@gmail.com"] {
+    color: #ffffff !important;
+  }
+}
