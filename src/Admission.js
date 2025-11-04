@@ -18,7 +18,7 @@ const Admission = forwardRef((props, ref) => {
     e.preventDefault();
 
     const form = new FormData();
-    form.append("access_key", "ad26c1f3-ce39-4116-bf1b-0cd7657fa877"); // your Web3Forms key
+    form.append("access_key", "YOUR_ACCESS_KEY"); // your Web3Forms key
     form.append("name", formData.name);
     form.append("email", formData.email);
     form.append("phone", formData.phone);
