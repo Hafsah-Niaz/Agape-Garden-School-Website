@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# 🌸 Agape Garden Play School Website 🌸
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-ReactJS-f9a8d4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Styling-HTML%20%7C%20CSS%20%7C%20Bootstrap-ffc0cb?style=for-the-badge" />
+ [<img src="https://img.shields.io/badge/Deployed-Live%20Website-e5bdf6?style=for-the-badge" />](https://www.agapegarden.in/)
 
-## Available Scripts
 
-In the project directory, you can run:
+</p>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🌷 Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The **Agape Garden Play School Website** is a modern, responsive, and visually engaging web application built using **ReactJS**.  
+It serves as a digital platform to showcase the school’s mission, environment, and features — offering parents and visitors a smooth and interactive browsing experience.
 
-### `npm test`
+This project focuses on **frontend design**, **component reusability**, and **responsive layouts**, making it easy to maintain and extend for future needs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🌺 Key Highlights
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🌸 **Built with ReactJS**  
+Developed as a single-page application (SPA) using React for a fast, fluid user experience.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🌼 **Smooth Navigation**  
+Includes clearly defined sections such as Home, About Us, Features, Testimonials, Gallery, and Enquiry Form.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🌷 **Modern Responsive Design**  
+Fully optimized for desktop and mobile views using **CSS** and **Bootstrap**.
 
-### `npm run eject`
+🌹 **Dynamic Components**  
+Reusable components for the navbar, testimonial sliders, gallery, and enquiry form ensure maintainability.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🌻 **Interactive User Experience**  
+Scroll animations, transitions, and image galleries make the site visually engaging.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🌸 **Live Deployment**  
+Hosted and accessible online through a public link for real-time access.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🌼 Tech Stack
 
-## Learn More
+| Layer | Technology |
+|-------|-------------|
+| 💖 Frontend | ReactJS |
+| 🌷 Styling | HTML, CSS, Bootstrap |
+| 🌸 Routing | React Router |
+| 🌺 Deployment | GitHub Pages / Netlify |
+| 🌼 Design Theme | Soft Pink & Floral |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🌹 Features Summary
 
-### Code Splitting
+- 🎀 Elegant and professional school landing page  
+- 💻 Responsive across all devices  
+- 📸 Interactive image gallery  
+- 💬 Testimonial carousel for parent feedback  
+- 📝 Enquiry form for admissions  
+- 🌸 Clean code structure and modular design  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🌷 Live Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🌐 **Visit the Live Website:** [https://www.agapegarden.in/]  
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start the development server
+npm start
