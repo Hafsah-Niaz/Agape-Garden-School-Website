@@ -52,7 +52,7 @@ Hosted and accessible online through a public link for real-time access.
 | 🌷 Styling | HTML, CSS, Bootstrap |
 | 🌸 Routing | React Router |
 | 🌺 Deployment | GitHub Pages / Netlify |
-| 🌼 Design Theme | Soft Pink & Floral |
+
 
 ---
 
